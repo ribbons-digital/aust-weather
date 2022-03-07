@@ -1,0 +1,45 @@
+{
+  "name": "world_weather",
+  "version": "0.1.0",
+  "description": "World weather app using React class components",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:prod": "NODE_ENV=production npm run clean && webpack -p",
+    "build:dev": "NODE_ENV=development npm run clean && webpack -p",
+    "dev": "NODE_ENV=development webpack-dev-server --hot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "class",
+    "weather"
+  ],
+  "author": "Ricky Liew",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.1.0",
+    "favicons": "^7.0.0-beta.3",
+    "favicons-webpack-plugin": "^5.0.2",
+    "html-webpack-plugin": "^5.5.0",
+    "path": "^0.12.7",
+    "rimraf": "^3.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  },
+  "dependencies": {
+    "css-loader": "^6.6.0",
+    "dotenv-webpack": "^7.1.0",
+    "node-sass": "^7.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0",
+    "sass-loader": "^12.6.0"
+  }
+}

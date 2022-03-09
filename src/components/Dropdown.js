@@ -18,18 +18,17 @@ const Dropdown = (data) => {
     );
   });
 
-  // console.log(data);
   return (
-    <div className="">
+    <div className="dropdown py-2">
       <button
-        className="btn btn-secondary dropdown-toggle"
+        className="btn btn-sm btn-secondary dropdown-toggle py-1"
         type="button"
         id="dropdownMenuButton"
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
       >
-        Select a city
+        {selectedCity ? selectedCity.name : "Select a city"}
       </button>
       <div className="dropdown-menu">{renderCities}</div>
     </div>

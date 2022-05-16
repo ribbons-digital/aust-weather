@@ -1,8 +1,6 @@
 # Aust weather
 
-A basic weather app implemented using React functional components
 
-# Build details
 
 ## Styling
 Uses _[Bootstrap](https://getbootstrap.com/)_ for styling

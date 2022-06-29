@@ -44,7 +44,6 @@ function App() {
 
   useEffect(() => {});
 
-  // console.log(weatherData);
   return (
     <div className="App container-fluid p-4">
       <div className="">

@@ -19,7 +19,7 @@ function App() {
   const getWeather = (id) => {
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?id=${id}&appId=${KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?id=${id}&appId=${KEY}&units=metric`
       )
       .then((res) => {
         setWeatherData(res.data);

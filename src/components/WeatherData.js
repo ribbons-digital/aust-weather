@@ -3,11 +3,6 @@ import React from "react";
 const WeatherData = (data) => {
   const { name, weather, main, wind, clouds, rain, dt } = data.weatherData;
 
-  // console.log(!data);
-  // const query = axiosQuery()
-  // if (!data) {
-  //   return <div className=""></div>;
-  // }
   return (
     <div className="py-3">
       <div className="h2">{name}</div>
@@ -16,7 +11,7 @@ const WeatherData = (data) => {
         <span>{main.temp}&#8451; </span>
         <span>
           <img
-            src={`http://openweathermap.org/img/wn/${weather[0].icon}.png`}
+            src={`https://openweathermap.org/img/wn/${weather[0].icon}.png`}
           ></img>
         </span>
       </div>

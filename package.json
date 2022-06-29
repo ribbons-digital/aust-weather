@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
+    "build": "webpack",
     "build:prod": "NODE_ENV=production npm run clean && webpack -p",
     "build:dev": "NODE_ENV=development npm run clean && webpack -p",
     "dev": "NODE_ENV=development webpack-dev-server --hot",

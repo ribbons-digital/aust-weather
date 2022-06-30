@@ -10,29 +10,19 @@ const KEY = process.env.OPEN_WEATHER;
 import Dropdown from "./Dropdown";
 import WeatherData from "./WeatherData";
 
+import getWeather from "../helpers/getWeather";
 import cities from "../data/openWeather/cities.json";
 
 function App() {
   const [selectedCity, setSelectedCity] = useState(null);
-  const [weatherData, setWeatherData] = useState(null);
-
-  const getWeather = (id) => {
-    console.log("KEY: ", KEY);
-    axios
-      .get(
-        `https://api.openweathermap.org/data/2.5/weather?id=${id}&appId=${KEY}&units=metric`
-      )
-      .then((res) => {
-        setWeatherData(res.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  };
+  const [weatherData, setWeatherData] = React.useState(null);
 
   const renderSelectedCity = () => {
     return selectedCity ? (
-      <button className="" onClick={() => getWeather(selectedCity.id)}>
+      <button
+        className=""
+        onClick={() => getWeather(selectedCity.id, setWeatherData)}
+      >
         Submit
       </button>
     ) : null;

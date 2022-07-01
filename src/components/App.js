@@ -5,7 +5,7 @@ import "regenerator-runtime/runtime";
 import axios from "axios";
 
 import "../styles/styles.css";
-const KEY = process.env.OPEN_WEATHER;
+const KEY = process.env.WEATHER;
 
 import Dropdown from "./Dropdown";
 import WeatherData from "./WeatherData";

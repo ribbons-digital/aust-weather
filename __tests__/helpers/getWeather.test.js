@@ -70,7 +70,6 @@ describe("when API is successful", () => {
     const setStateMock = jest.fn();
     const getWeather = jest.fn(() => Promise.resolve({ res: weather }));
     const weatherData = await getWeather(KEY, setStateMock);
-    console.log(weatherData);
 
     expect(weatherData.res.data).not.toBeUndefined();
   });

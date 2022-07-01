@@ -2,10 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import "@babel/polyfill";
 import "regenerator-runtime/runtime";
-import axios from "axios";
 
 import "../styles/styles.css";
-const KEY = process.env.OPEN_WEATHER;
 
 import Dropdown from "./Dropdown";
 import WeatherData from "./WeatherData";

@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="App container-fluid p-4"
+>
+  <div
+    className=""
+  >
+    <p
+      className="h5"
+    >
+      Current weather
+    </p>
+    <Dropdown
+      cities={
+        Object {
+          "cities": Array [
+            Object {
+              "coord": Object {
+                "lat": -33.867851,
+                "lon": 151.207321,
+              },
+              "country": "AU",
+              "id": 2147714,
+              "name": "Sydney",
+              "state": "",
+            },
+            Object {
+              "coord": Object {
+                "lat": -35.283459,
+                "lon": 149.128067,
+              },
+              "country": "AU",
+              "id": 2172517,
+              "name": "Canberra",
+              "state": "",
+            },
+            Object {
+              "coord": Object {
+                "lat": -27.467939,
+                "lon": 153.028091,
+              },
+              "country": "AU",
+              "id": 2174003,
+              "name": "Brisbane",
+              "state": "",
+            },
+            Object {
+              "coord": Object {
+                "lat": -39.200001,
+                "lon": -65.76667,
+              },
+              "country": "AR",
+              "id": 3859521,
+              "name": "Darwin",
+              "state": "",
+            },
+            Object {
+              "coord": Object {
+                "lat": -34.920502,
+                "lon": 138.600586,
+              },
+              "country": "AU",
+              "id": 7839644,
+              "name": "Adelaide",
+              "state": "",
+            },
+            Object {
+              "coord": Object {
+                "lat": -31.933331,
+                "lon": 115.833328,
+              },
+              "country": "AU",
+              "id": 2063523,
+              "name": "Perth",
+              "state": "",
+            },
+            Object {
+              "coord": Object {
+                "lat": -42.87936,
+                "lon": 147.329407,
+              },
+              "country": "AU",
+              "id": 2163355,
+              "name": "Hobart",
+              "state": "",
+            },
+          ],
+        }
+      }
+      selectedCity={null}
+      setSelectedCity={[Function]}
+    />
+  </div>
+  <div
+    className="mb-3"
+  />
+</div>
+`;
